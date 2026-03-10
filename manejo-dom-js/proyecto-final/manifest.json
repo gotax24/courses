@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "dom-js",
+  "version": "0.0.8",
+  "description": "Una extension como practica de mi curso de js, modifica el dom con js",
+  "icons": {
+    "16": "img/js-16.png",
+    "32": "img/js-32.png",
+    "48": "img/js-64.png",
+    "128": "img/js-128.png"
+  },
+  "action": {
+    "default_title": "Haz click aqui",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.www.flaticon.com/*"],
+      "css": ["ed.css"],
+      "js": ["modal.js"]
+    }
+  ]
+}

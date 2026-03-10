@@ -1,0 +1,100 @@
+/* Reset CSS */
+
+/* Aplicar un box-sizing uniforme a todos los elementos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Asegurarse de que los elementos de lista no tengan viñetas ni espaciado */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Asegurarse de que los elementos de bloque se muestren como bloques */
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+ul {
+  display: block;
+}
+
+/* Asegurarse de que los enlaces se muestren en línea */
+a {
+  text-decoration: none;
+}
+
+/* Establecer el tamaño de fuente base en 16px */
+html {
+  font-size: 16px;
+}
+
+/* Añadir estilos de fuente */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Añadir otros estilos de reset según sea necesario */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  padding: 4rem;
+  align-items: center;
+}
+
+.info {
+  grid-column: 2 / 5;
+}
+
+.poster {
+  width: 30rem;
+}
+
+.poster img {
+  width: 100%;
+}
+
+.fondo {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(2rem);
+  opacity: 0.6;
+  z-index: -1;
+}

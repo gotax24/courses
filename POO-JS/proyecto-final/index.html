@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es  ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://ux.ed.team/css/styles.css?201803301710"
+    />
+    <title>Antonio Rosmini | Cursos</title>
+  </head>
+  <body>
+    <div class="ed-grid">
+      <h1>Antonio Rosmini  Cursos</h1>
+      <form id="form-cursos">
+        <div class="ed-grid m-grid-4">
+          <div class="form-item">
+            <label>
+              Nombre del curso: 
+              <input type="text" name="nombre">
+            </label>
+          </div>
+          <div class="form-item">
+            <label>
+              Poster del curso: 
+              <input type="text" name="poster" >
+            </label>
+          </div>
+          <div class="form-item">
+            <label>
+              Clases del curso: 
+              <input type="number" min="0"  name="cantidad" >
+            </label>
+          </div>
+          <div class="form-item m-py-3">
+              <input type="submit" class="button m-p">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="ed-grid m-grid-4 s-grid-2 row-gap" id="cursos">
+    </div>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

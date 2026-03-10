@@ -1,0 +1,13 @@
+.show{
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  background-color: white;
+  padding: 3rem;
+  color: black;
+  z-index: 999;
+}
+
+body{
+  overflow: hidden;
+}

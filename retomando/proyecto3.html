@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masix</title>
+  </head>
+  <body>
+    <header>
+      <h1>Convertidor de masix</h1>
+      <h2>Vamos alla</h2>
+    </header>
+    <main>
+      <label for="">
+        Numero a convertir
+        <input type="number" id="masa" />
+      </label>
+      <br /><label for="unidad1"> Unidad 1= </label>
+      <select id="unidad1">
+        <option value="1000000">Tonelada</option>
+        <option value="1000">Kilogramo</option>
+        <option value="100">Hectogramo</option>
+        <option value="10">Decagramo</option>
+        <option value="1">Gramo</option>
+        <option value="0.1">Decigramo</option>
+        <option value="0.01">Centigramo</option>
+        <option value="0.001">Miligramo</option>
+        <option value="0.000001">Microgramo</option>
+      </select>
+      <p>X</p>
+      <label for="unidad2">Unidad 2= </label>
+      <select id="unidad2">
+        <option value="1000000">Tonelada</option>
+        <option value="1000">Kilogramo</option>
+        <option value="100">Hectogramo</option>
+        <option value="10">Decagramo</option>
+        <option value="1">Gramo</option>
+        <option value="0.1">Decigramo</option>
+        <option value="0.01">Centigramo</option>
+        <option value="0.001">Miligramo</option>
+        <option value="0.000001">Microgramo</option>
+      </select>
+      <button onclick="convertir()">Convertir</button>
+      <p>Resultado = <span id="resultado"></span></p>
+    </main>
+    <script src="proyecto3.js"></script>
+  </body>
+</html>

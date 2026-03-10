@@ -1,0 +1,9 @@
+{
+  "projects": {
+<<<<<<< HEAD
+    "default": "mouse-follower-firebase"
+=======
+    "default": "mouse-follow-c4917"
+>>>>>>> 72fe8839f8f7758f3b30806486c7fd535f3e84c0
+  }
+}

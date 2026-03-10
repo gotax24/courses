@@ -1,0 +1,78 @@
+body {
+  background-color: rgba(157, 94, 245, 0.942);
+}
+
+input {
+  background-color: rgb(99, 211, 119);
+  border-radius: 8px;
+  border-style: none;
+  height: 20px;
+  width: 150px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1 {
+  color: rgba(11, 11, 0, 0.467);
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+
+button {
+  background-color: rgb(169, 169, 169);
+  border-style: none;
+  border-radius: 12px;
+  height: 30px;
+  width: 130px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: blueviolet;
+}
+
+.medio{
+  width: 10%;
+  margin: 0 auto;
+}
+
+.botones-medio{
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  height: 50px;
+}
+
+#result{
+    background-color: rgb(243, 243, 144);
+    display: block;
+    width: 10%;
+    margin: 0 auto; 
+    height: 25px;
+    text-align: center;
+    font-size: 18px;    
+}
+
+#result::placeholder,
+input::placeholder{
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+
+button:hover{
+    background-color: rgb(114, 114, 114);
+}
+
+h2{
+    text-align: center;
+    color: rgba(11, 11, 0, 0.467);
+    
+}

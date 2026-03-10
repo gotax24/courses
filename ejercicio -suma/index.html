@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bienvenido</h1>
+    <h2>Ingrese los numeros</h2>
+    <div class="medio">
+      <input type="number" id="numberA"  />
+      <input type="number" id="numberB"  />
+    </div>
+    <div class="botones-medio">
+      <button onclick="sum()">Suma</button>
+      <button onclick="res()">Resta</button>
+      <button onclick="div()">Division</button>
+      <button onclick="mult()">Multiplicacion</button>
+    </div>
+
+    <input type="text" id="result" placeholder="Resultado" readonly>
+
+    <script src="app.js"></script>
+  </body>
+</html>

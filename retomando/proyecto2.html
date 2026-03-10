@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarix</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenido</h1>
+      <h2>A tu app de notas favorita</h2>
+    </header>
+    <main>
+      <label>
+        La tarea:
+        <input type="text" id="tarea" />
+      </label>
+      <button onclick="agregar()">Agregar</button>
+      <button onclick="editar()">Editar</button><span id="editarNuevo"></span>
+      <button onclick="eliminar()">Eliminar</button
+      ><span id="eliminarNuevo"></span>
+      <ol id="lista"></ol>
+    </main>
+
+    <script src="proyecto2.js"></script>
+  </body>
+</html>
