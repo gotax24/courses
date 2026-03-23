@@ -1,9 +1,38 @@
-version: '3.8'
-
 services:
   web:
-    image: php:8.3-apache
+    build:
+      context: .
+      dockerfile: .docker/php/Dockerfile
+    container_name: mi_app_php
     ports:
       - "8081:80"
     volumes:
       - ./:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql_server_2019
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "PasswordFuerte123!" 
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+  # 🚀 EL TRUCO: Contenedor efímero para Composer
+  composer:
+    image: composer:latest
+    container_name: mi_app_composer
+    volumes:
+      # Mapeamos tu código a la carpeta /app (el estándar de la imagen de Composer)
+      - ./:/app
+    # 🪄 LA MAGIA DEL UID: 1000 es el número de tu usuario 'ernesto' en WSL
+    user: "1000:1000"
+    # Esta línea evita que el contenedor se quede encendido sin hacer nada
+    profiles: ["cli-only"]
+
+volumes:
+  sqlserver_data:
