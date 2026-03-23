@@ -44,14 +44,13 @@ Proyectos aplicados para dominar estados, eventos y renderizado.
 * 📁 `php-desde-cero`: Lógica de servidor, sesiones y patrón MVC.
 * 📁 `sql-desde-cero`: Modelado de datos, consultas relacionales y normalización.
 * 📁 `sql-server-desde-cero`: Especialización en el motor de base de datos de Microsoft (T-SQL, Procedimientos almacenados).
-* 📁 `gotax24`: [Aquí puedes poner una breve descripción de qué es este proyecto si es de backend o fullstack].
 
 ---
 
 ## 💡 ¿Por qué un Monorepo?
 Decidí agrupar todo en un solo lugar para:
 1. Tener una **biblioteca de código de referencia rápida** (mis propios *snippets* y configuraciones).
-2. Mantener mi GitHub limpio y profesional, separando mis ejercicios de aprendizaje de mis proyectos de producción (como sistemas de inventario o aplicaciones reales).
+2. Mantener mi GitHub limpio y profesional, separando mis ejercicios de aprendizaje de mis proyectos de producción.
 3. Mostrar transparencia sobre mi proceso de aprendizaje continuo (*Lifelong learning*).
 
 ---
